@@ -389,6 +389,39 @@
       </div>
     </div>
   </footer>
+  <div class="modal-overlay">
+    <div class="modal">
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <button type="button" class="modal-close-btn">
+        <svg class="cross-icon" width="8" height="8" viewbox="0 0 24 24">
+          <use href="./images/icons.svg#vector"></use>
+        </svg>
+      </button>
+    <form class="modal-form" name="contacts-form" >
+      <label class="form-label">
+        Name
+        <input class="input-form" type="text" name="user-name" />
+      </label>
+      <label class="form-label">
+        Phone
+        <input class="input-form" type="tel" name="user-tel" />
+      </label>
+      <label class="form-label">
+        Mail
+        <input class="input-form" type="email" name="user-email" />
+      </label>
+      <label class="form-label">
+        Comment
+        <textarea class="input-form" name="comment" placeholder="Text input"
+          rows="5"></textarea>
+      </label>
+      <div class="agree">
+        <input type="checkbox" name="agreement" value="agreement" id="agree">
+        <label for="agree">I accept the terms and conditions of the Privacy Policy</label>
+      </div>
+      <button type="button">Send</button>
+      </form>
+    </div>
+  </div>
 </body>
-
 </html>
