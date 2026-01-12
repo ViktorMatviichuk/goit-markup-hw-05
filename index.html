@@ -112,7 +112,7 @@
               <p class="member-descr">Product Designer</p>
               <ul class="icon-list">
                 <li class="icon-item">
-                  <a href="https://www.instagram.com/" target="_blank" class="social-link" >
+                  <a href="https://www.instagram.com/" target="_blank" class="social-link">
                     <svg class="icon" width="16" height="16" viewBox="0 0 16 16" fill="none">
                       <use href="./images/icons.svg#instagram"></use>
                     </svg>
@@ -391,37 +391,52 @@
   </footer>
   <div class="modal-overlay">
     <div class="modal">
-      <p class="modal-title">Leave your contacts and we will call you back</p>
       <button type="button" class="modal-close-btn">
         <svg class="cross-icon" width="8" height="8" viewbox="0 0 24 24">
           <use href="./images/icons.svg#vector"></use>
         </svg>
       </button>
-    <form class="modal-form" name="contacts-form" >
-      <label class="form-label">
-        Name
-        <input class="input-form" type="text" name="user-name" />
-      </label>
-      <label class="form-label">
-        Phone
-        <input class="input-form" type="tel" name="user-tel" />
-      </label>
-      <label class="form-label">
-        Mail
-        <input class="input-form" type="email" name="user-email" />
-      </label>
-      <label class="form-label">
-        Comment
-        <textarea class="input-form" name="comment" placeholder="Text input"
-          rows="5"></textarea>
-      </label>
-      <div class="agree">
-        <input type="checkbox" name="agreement" value="agreement" id="agree">
-        <label for="agree">I accept the terms and conditions of the Privacy Policy</label>
-      </div>
-      <button type="button">Send</button>
+      <p class="modal-title">Leave your contacts and we will call you back</p>
+      <form class="modal-form" name="contacts-form" autocomplete="off" novalidate>
+        <div class="modal-form-fild">
+          <label class="form-label">Name</label>
+        </div>
+        <div class="modal-input-form">
+          <input class="input-form" type="text" name="user-name" />
+          <svg class="modal-icon" width="18" heigth="24">
+            <use href="./images/icons.svg#person"></use>
+          </svg>
+        </div>
+        <div class="modal-form-fild">
+          <label class="form-label">Phone</label>
+        </div>
+        <div class="modal-input-form">
+          <input class="input-form" type="tel" name="user-tel" />
+          <svg class="modal-icon" width="18" heigth="24">
+            <use href="./images/icons.svg#tel"></use>
+          </svg>
+        </div>
+        <div class="modal-form-fild">
+          <label class="form-label">Mail</label>
+        </div>
+        <div class="modal-input-form">
+          <input class="input-form" type="email" name="user-email" />
+          <svg class="modal-icon" width="18" heigth="24">
+            <use href="./images/icons.svg#mail"></use>
+          </svg>
+        </div>
+        <div class="modal-text-aria">
+          <label class="form-label">Comment</label>
+          <textarea class="input-form" name="comment" placeholder="Text input" rows="5"></textarea>
+        </div>
+        <div class="agree">
+          <input type="checkbox" name="agreement" value="agreement" id="agree">
+          <label for="agree">I accept the terms and conditions of the Privacy Policy</label>
+        </div>
+        <button type="button">Send</button>
       </form>
     </div>
   </div>
 </body>
+
 </html>
